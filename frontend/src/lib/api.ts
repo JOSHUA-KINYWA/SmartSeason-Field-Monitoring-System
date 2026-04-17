@@ -1,3 +1,5 @@
+const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL ?? '/api').replace(/\/$/, '');
+
 export async function apiFetch<T>(path: string, token: string | null, init: RequestInit = {}) {
   const headers: Record<string, string> = {
     'Content-Type': 'application/json',
@@ -8,7 +10,7 @@ export async function apiFetch<T>(path: string, token: string | null, init: Requ
     headers.Authorization = `Bearer ${token}`;
   }
 
-  const response = await fetch(`/api/${path}`, {
+  const response = await fetch(`${apiBaseUrl}/${path}`, {
     ...init,
     headers,
   });
