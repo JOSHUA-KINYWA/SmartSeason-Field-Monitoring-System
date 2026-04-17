@@ -71,6 +71,36 @@ The frontend runs via Vite, typically on `http://localhost:5173`.
 
 Open the frontend URL in your browser and sign in.
 
+## Development
+
+From the repository root, install dependencies and start both services together:
+
+```bash
+npm install
+npm run dev
+```
+
+This runs both:
+
+- `npm run start:backend` — starts the backend on `http://localhost:5000`
+- `npm run start:frontend` — starts the frontend via Vite
+
+If you prefer manual startup, use:
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+and in another terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
 ## Design Decisions
 
 - **Frontend:** React + Vite + TypeScript + Tailwind CSS for a fast modern development experience and polished UI.
