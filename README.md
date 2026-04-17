@@ -2,6 +2,8 @@
 
 A modern field monitoring dashboard built with React, TypeScript, Tailwind CSS, Vite, Express, and Supabase.
 
+Live demo: https://smart-season-field-monitoring-syste.vercel.app
+
 ## Setup Instructions
 
 ### 1. Clone repository
